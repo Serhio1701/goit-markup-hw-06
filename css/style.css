@@ -1124,11 +1124,7 @@ button {
   color: #4d5ae5;
 }
 .submit-btn {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 10px;
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
