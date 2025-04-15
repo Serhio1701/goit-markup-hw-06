@@ -282,8 +282,7 @@ button {
 .mob-cont-link.current {
   color: #404bbf;
 }
-
-.mob-cont-list {
+.mob-contacts {
   margin-bottom: 48px;
 }
 
@@ -394,6 +393,7 @@ button {
   .slogan {
     max-width: 496px;
     font-size: 56px;
+    margin-bottom: 36px;
   }
 }
 @media screen and (min-width: 768px) and (min-resolution: 2x) {
@@ -411,13 +411,16 @@ button {
   .section-slogan {
     padding-top: 188px;
     padding-bottom: 188px;
-    min-width: 1158px;
+    max-width: 1440px;
     background-image: linear-gradient(
         to bottom,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people/people-pc-min.jpg);
+  }
+  .slogan {
+    margin-bottom: 48px;
   }
 }
 @media screen and (min-width: 1158px) and (min-resolution: 2x) {
@@ -468,7 +471,7 @@ button {
   .feartures-item {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px 24px;
   }
   .head {
     text-align: left;
@@ -498,6 +501,7 @@ button {
   }
   .descr {
     width: 264px;
+    font-weight: 400;
   }
 }
 
@@ -589,7 +593,7 @@ button {
   .container-team {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 64px 24px;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -620,7 +624,7 @@ button {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 48px 24px;
+  gap: 48px;
   justify-content: center;
   align-items: center;
 }
@@ -679,13 +683,18 @@ button {
 
 @media screen and (min-width: 768px) {
   .portfolio-item {
-    height: 420px;
     width: 356px;
+  }
+  .portfolio-list {
+    gap: 72px 24px;
   }
 }
 @media screen and (min-width: 1158px) {
   .portfolio-section {
     padding: 120px 0px;
+  }
+  .portfolio-item {
+    width: calc((100% - 48px) / 3);
   }
 }
 
@@ -848,6 +857,7 @@ button {
     flex-direction: row;
     gap: 72px 24px;
     max-width: 584px;
+    justify-content: flex-start;
   }
   .footer-social {
     flex-direction: column;
@@ -872,7 +882,7 @@ button {
     gap: 0px;
     justify-content: flex-start;
     flex-direction: row;
-    max-width: 1440px;
+    max-width: 1158px;
   }
   .footer-logo {
     display: inline-block;
@@ -919,10 +929,10 @@ button {
   top: 50%;
   left: 50%;
 
-  padding: 72px 24px 24px 24px;
   width: 288px;
   min-height: 623px;
   border-radius: 4px;
+  padding: 72px 16px 16px 16px;
 
   transform: translate(-50%, -50%);
 
@@ -948,7 +958,6 @@ button {
 
   width: 24px;
   height: 24px;
-  padding: 0px;
 
   border-radius: 50%;
   background-color: #e7e9fc;
@@ -986,17 +995,17 @@ button {
   margin-bottom: 16px;
 }
 .form-modal {
-  position: absolute;
-  left: 24px;
-  top: 112px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
 
   border-radius: 4px;
   width: 256px;
   height: 336px;
 }
-.input-container {
-  margin-bottom: 8px;
-}
+
 .form-label {
   font-weight: 400;
   font-size: 12px;
@@ -1082,7 +1091,6 @@ button {
   color: #8e8f99;
   line-height: 1.17;
   align-items: center;
-  margin-bottom: 4px;
 
   a {
     line-height: 1.33333;
@@ -1094,9 +1102,10 @@ button {
 
 .policy-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   flex-direction: row;
+  flex-wrap: nowrap;
   gap: 8px;
   margin-bottom: 24px;
   width: 256px;
@@ -1152,6 +1161,7 @@ button {
   .modal {
     width: 408px;
     min-height: 584px;
+    padding: 72px 24px 24px 24px;
   }
   .form-modal {
     width: 360px;
