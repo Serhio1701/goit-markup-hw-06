@@ -981,7 +981,7 @@ button {
 }
 .info {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 
   font-family: "Roboto", sans-serif;
@@ -991,21 +991,16 @@ button {
   text-align: center;
   letter-spacing: 0.02em;
   color: #2e2f42;
-
-  margin-bottom: 16px;
 }
 .form-modal {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 8px;
   position: absolute;
   left: 16px;
   top: 112px;
+
   border-radius: 4px;
   width: 256px;
   height: 336px;
+  margin-top: 16px;
 }
 
 .form-label {
@@ -1152,7 +1147,6 @@ button {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 24px;
 }
 
 .submit-btn:hover,
@@ -1169,11 +1163,16 @@ button {
   .form-modal {
     width: 360px;
     height: 336px;
+    left: 24px;
+    margin-top: 0px;
   }
   .form-input,
   .text-area,
   .policy-container {
     width: 360px;
+  }
+  .info {
+    margin-bottom: 16px;
   }
 }
 @media screen and (min-width: 1158px) {
