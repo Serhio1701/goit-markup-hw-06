@@ -1082,13 +1082,18 @@ button {
   border-color: #4d5ae5;
 }
 .policy-label {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+
   font-weight: 400;
   font-size: 12px;
   letter-spacing: 0.04em;
   color: #8e8f99;
   line-height: 1.17;
   align-items: center;
-
+  margin-bottom: 4px;
   a {
     line-height: 1.33333;
     text-decoration: underline;
@@ -1105,7 +1110,6 @@ button {
   flex-wrap: nowrap;
   gap: 8px;
   margin-bottom: 24px;
-  width: 256px;
 }
 .fake-checkbox {
   border-radius: 2px;
@@ -1125,6 +1129,9 @@ button {
   border: 1px solid #404bbf;
   fill: #f4f4fd;
   border: none;
+}
+.checkbox-text {
+  pointer-events: auto;
 }
 .policy-link {
   color: #4d5ae5;
